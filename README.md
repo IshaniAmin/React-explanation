@@ -21,20 +21,18 @@ There are three phases: **Mounting**, **Updating**, and **Unmounting**. They can
 From the moment your component is born - when it's initially being rendered - it enters the Mounting Phase. Once your component is living a happy life and is being updated it enters the Updating Phase. Finally when it's time to end it's life it enters the Unmounting Phase.
 
 1. Mounting
-	- constructor() =>
-	- componentWillMount() =>
-	- render() =>
-	- componentDidMount() =>
+	- constructor() => This is called before it is mounted onto the page. This is also where state is first initialized.
+	- componentWillMount() => This is called right before the component is mounted onto the page
+	- render() => This is called right after componentWillMount()
+	- componentDidMount() => This is called right after the component is mounted onto the page
 
 2. Updating
-	- componentWillReceiveProps() =>
-	- shouldComponentUpdate() =>
-	- componentWillUpdate() =>
+	- componentWillReceiveProps() => This is called before the component that is mounted takes in new props
+	- shouldComponentUpdate() => This is called if there is an update in the component or before rendering if there are new props or a new state. If this one returns false, then the following won't be called. But if it returns true, they they will. 
+	- componentWillUpdate() => This is called right before new props or new state is being redered onto the page. This will only be called if shouldComponentUpdate() comes back true.
 	- render() =>
-	- componentDidUpdate() =>
+	- componentDidUpdate() => This will be called right after an update happens in the component. 
 
 3. Unmounting
-	- componentWillUnmount() =>
-
-
+	- componentWillUnmount() => This will be called right before the component is finished being used
 
