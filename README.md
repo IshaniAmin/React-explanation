@@ -1,4 +1,4 @@
-# React-explanation
+# React Explanation of Props, State, and Component Life Cylce
 
 
 ## Props
