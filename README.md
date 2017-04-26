@@ -21,9 +21,20 @@ There are three phases: **Mounting**, **Updating**, and **Unmounting**. They can
 From the moment your component is born - when it's initially being rendered - it enters the Mounting Phase. Once your component is living a happy life and is being updated it enters the Updating Phase. Finally when it's time to end it's life it enters the Unmounting Phase.
 
 1. Mounting
-	- constructor()
-	- componentWillMount()
-	- render()
-	- componentDidMount()
+	- constructor() =>
+	- componentWillMount() =>
+	- render() =>
+	- componentDidMount() =>
+
+2. Updating
+	- componentWillReceiveProps() =>
+	- shouldComponentUpdate() =>
+	- componentWillUpdate() =>
+	- render() =>
+	- componentDidUpdate() =>
+
+3. Unmounting
+	- componentWillUnmount() =>
+
 
 
