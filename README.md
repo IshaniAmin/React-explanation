@@ -11,4 +11,4 @@ This is how the component's data is at a specific time. In the beginning, a comp
 
 ### Component Life Cycle
 
-There are three phases: **Mounting, **Updating, and **Unmounting
+There are three phases: **Mounting**, **Updating**, and **Unmounting**
